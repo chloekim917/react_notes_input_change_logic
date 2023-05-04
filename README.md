@@ -1,1 +1,1 @@
-# react_notes_input_change_logic
+A note on how to clean forms with a lot of input fields and organize form states.
