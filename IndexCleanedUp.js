@@ -11,6 +11,7 @@ function SignUp() {
     accountType: "pro",
     newsletter: true
   })
+// all states in one place 
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -19,13 +20,16 @@ function SignUp() {
   
   function handleChange(event) {
     const key = event.target.id
+    // 'id' shows which of the input fields is being changed. use 'console.log'. 
     const value = event.target.type === "checkbox" ? event.target.checked : event.target.value
-    
+    // 'checkbox' data format is different than others, so we need extra functioin
     setFormData({ 
       ...formData, 
       [key]: value
     })
+    // set all FormData that was set previously and whatever changed occurs according to key. 
   }
+//   pulled out of jsx portion
   
   console.log(formData)
 
